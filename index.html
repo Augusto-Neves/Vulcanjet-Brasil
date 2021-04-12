@@ -1,53 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vulcanjet Brasil | Home</title>
-    <!-- Style Sheets -->
-    <link rel="stylesheet" href="./public/css/main.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-    <header>
-        <div class="openning-hour">
-            <span class="phone">Telefones: (87) 3024-0021 / (11) 2889-4199 </span>
-            <span class="open">Aberto das 08h às 18h - <span class="isOpen">ABERTO</span>
-            </span>
-        </div>
-        <nav class="topnav" id="myTopnav">
-            <a class="logo" href="/index.html">
-                <img src="./public/img/vulcanjet-logo.png" alt="Vulcanjet Brasil Logo">
-            </a>
-            <ul>
-                <li><a href="./index.html" class="active">Início</a></li>
-                <li><a href="./public/views/servicos.html">Serviços</a></li>
-                <li><a href="./public/views/quemSomos.html">Quem Somos</a></li>
-                <li><a href="./public/views/equipamentos.html">Equipamentos</a></li>
-                <li><a href="./public/views/contato.html">Contato</a></li>
-                <li><a href="./public/views/covid19.html">COVID-19</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </ul>
-        </nav>
-        <div class="banner">            
-            <h1>Vulcanjet Brasil</h1>
-            <h2>Desinfecção e Higienização</h2>
-            <a  class="button" href="./public/views/contato.html" target="blank"  >Saiba mais</a>
-        </div>
-    </header>
-    <main>  
-        
-    </main>
+  <header>
+    <div class="openning-hour">
+      <span class="phone">Telefones: (87) 3024-0021 / (11) 2889-4199 </span>
+      <span class="open">Aberto das 08h às 18h - <span class="isOpen">ABERTO</span>
+      </span>
+    </div>
 
-    <script src="./public/js/main.js"></script>
+    <nav class="navbar" role="navigation">
+      <div class="nav-wrapper">
+        <a id="logo-container" href="./index.html" class="brand-logo"><img src="./img/vulcanjet-logo.png"
+            alt="Vulcanjet Brasil Logo" width="88" height="auto"></a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html" class="active">Início</a></li>
+          <li><a href="./pages/servicos.html">Serviços</a></li>
+          <li><a href="./pages/quemsomos.html">Quem Somos</a></li>
+          <li><a href="./pages/equipamentos.html">Equipamentos</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+          <li><a href="./pages/covid.html">COVID-19</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="./index.html" class="active">Início</a></li>
+          <li><a href="./pages/servicos.html">Serviços</a></li>
+          <li><a href="./pages/quemsomos.html">Quem Somos</a></li>
+          <li><a href="./pages/equipamentos.html">Equipamentos</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+          <li><a href="./pages/covid.html">COVID-19</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <!--navbar-->
+
+    <div class="banner">
+      <h1>Vulcanjet Brasil</h1>
+      <h2>Desinfecção e Higienização</h2>
+      <a class="button" href="./pages/contato.html" target="_blank">Saiba mais</a>
+    </div>
+    <!--banner-->
+  </header>
+  <main>
+    <div class="container">
+      <div class="section">
+        <h2 class="center title">Desinfecção e Higienização</h2>        
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Speeds up development</h5>
+
+              <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate
+                our
+                custom components. Additionally, we refined animations and transitions to provide a smoother experience
+                for developers.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">User Experience Focused</h5>
+
+              <p class="light">By utilizing elements and principles of Material Design, we were able to create a
+                framework
+                that incorporates components and animations that provide more feedback to users. Additionally, a single
+                underlying responsive system across all platforms allow for a more unified user experience.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">Easy to work with</h5>
+
+              <p class="light">We have provided detailed documentation as well as specific code examples to help new
+                users
+                get started. We are also always open to feedback and can answer any questions a user may have about
+                Materialize.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+    </div>
+    <!--Container-->
+    <div class="section">      
+      <div class="parallax-container">
+        <div class="parallax"></div>
+          <div class="container">
+            <h2 class="center">Entre em contato conosco e saiba mais sobre os nossos serviços e preços </h2><br><br>
+            <a class="button row center" href="./pages/contato.html" target="_blank">Contato</a>
+          
+        </div>
+
+      </div>
+    </div><br><br>
+  </main>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+            full time job. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
 </body>
 
 </html>
