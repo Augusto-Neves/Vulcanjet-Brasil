@@ -13,17 +13,18 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 html, body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  margin: auto 0;
+  margin: auto 0;  
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background-gray);
+  background: var(--background-gray); 
 }
 
 .icon-block {
@@ -101,12 +102,10 @@ body {
   letter-spacing: 0.3rem;
   line-height: 4rem;
   text-transform: uppercase;
-}
-
-.banner h1 {
   font-size: 4rem;
   font-weight: 700;
-}
+
+}  
 
 .banner h2 {
   font-size: 1.7rem;
@@ -141,12 +140,21 @@ body {
   transform: scale(1.1);
 }
 .title {
+  font-size: 4rem; 
   margin-top: 5rem;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--dark-green);
 }
 
+.divider{
+  height: 0.3125rem;
+  background-color: var(--dark-green);
+  border-radius: 0.3125rem;
+}
+.text{
+  color: var(--dark-green)
+}
 .parallax-container{
   height: 60vh;
   display: flex;
@@ -165,4 +173,37 @@ body {
   font-weight: 500;
   letter-spacing: 0.3rem;
   color: var(--white);
+}
+
+/* Cards */
+.card{
+  width: 100vw;
+  display: flex; 
+   
+  justify-content: space-between;
+  background-color: var(--ligth-gray);
+  border: none;
+}
+.card-1, .card-2{
+  background-color: var(--ligth-green);
+  justify-content: space-around;
+  flex-direction: row;
+  border-radius: 56px;
+  height:612px;
+  width: 546px;
+  margin: 5rem auto;
+  transition: 0.5S;
+}
+.card-1:hover,.card-2:hover{
+  transform: scale(1.1);
+}
+
+/* Footer */
+.page-footer {
+  min-width: 100vw;
+  background-color: var(--ligth-green); 
+}
+
+.page-footer h5, a{
+  color: var(--dark-green);
 }
