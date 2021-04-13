@@ -13,18 +13,19 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
-  margin: auto 0;  
-  overflow-x: hidden;
+  margin: auto 0;
+  overflow-x: hidden; 
 }
 
 body {
-  background: var(--background-gray); 
+  background: var(--background-gray);
 }
 
 .icon-block {
@@ -59,8 +60,8 @@ body {
 
 .navbar {
   background-color: var(--ligth-green);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .nav-wrapper ul>li a {
@@ -86,7 +87,7 @@ body {
 /* Banner */
 
 .banner {
-  height: 60vh;  
+  height: 80vh;
   overflow: hidden;
   color: white;
   display: flex;
@@ -104,8 +105,7 @@ body {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
-
-}  
+}
 
 .banner h2 {
   font-size: 1.7rem;
@@ -139,36 +139,39 @@ body {
   color: var(--white);
   transform: scale(1.1);
 }
+
 .title {
-  font-size: 4rem; 
+  font-size: 4rem;
   margin-top: 5rem;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--dark-green);
 }
 
-.divider{
+.divider {
   height: 0.3125rem;
   background-color: var(--dark-green);
   border-radius: 0.3125rem;
 }
-.text{
+
+.text {
   color: var(--dark-green)
 }
-.parallax-container{
+
+.parallax-container {
   height: 60vh;
   display: flex;
   align-items: center;
 }
 
-.parallax-container .parallax { 
-  overflow: hidden;  
+.parallax-container .parallax {
+  overflow: hidden;
   background: linear-gradient(to right, #000000bb, #000000bb), url("../img/IMG_0022.JPG"), no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.container > h2 {
+.container>h2 {
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 0.3rem;
@@ -176,34 +179,88 @@ body {
 }
 
 /* Cards */
-.card{
+
+.card {
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
   width: 100vw;
-  display: flex; 
-   
+  display: flex;
   justify-content: space-between;
   background-color: var(--ligth-gray);
   border: none;
 }
-.card-1, .card-2{
+
+.card-1, .card-2 {
   background-color: var(--ligth-green);
   justify-content: space-around;
   flex-direction: row;
   border-radius: 56px;
-  height:612px;
-  width: 546px;
+  height: 38.25rem;
+  width: 34.06rem;
   margin: 5rem auto;
+  box-shadow: 1rem 1rem 1.25rem var(--dark-gray);
   transition: 0.5S;
 }
-.card-1:hover,.card-2:hover{
+
+.card-1 h4, .card-2 h4 {
+  padding: 2rem;
+  margin: 0;
+  color: var(--dark-green);
+  font-weight: 500;
+}
+
+.card-1 p, .card-2 p {
+  padding: 3rem;
+}
+
+.card-1:hover, .card-2:hover {
   transform: scale(1.1);
 }
 
-/* Footer */
-.page-footer {
-  min-width: 100vw;
-  background-color: var(--ligth-green); 
+/* Services */
+
+.services{
+  height: 40vh;
+  background-color: var(--ligth-gray);
+  margin-top: 5rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
-.page-footer h5, a{
+.services .container > .center {
   color: var(--dark-green);
+  font-size: 1.7rem;
+  font-weight: 500;  
+}
+
+/* Footer */
+
+footer.page-footer {
+  width: 100vw;
+  margin-top: 0;
+  /* padding: 0; */
+  background-color: var(--ligth-green);  
+}
+
+.page-footer h4, h5, p, a {
+  color: var(--dark-green);
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-green) !important;
+}
+
+.footer-copyright span {
+  margin: 0 2rem;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: var(--white);
+}
+
+.footer-copyright span > a{
+  color: var(--white)
 }
