@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// paralax
-// $(document).ready(function(){
-//   $('.parallax').parallax();
-// });
+// Carousel
+$(document).ready(function(){
+  $('.carousel').carousel();
+});

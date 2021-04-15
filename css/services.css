@@ -1,0 +1,44 @@
+/* Banner */
+@media only screen and (max-width: 600px){
+
+    /* Banner */
+    .banner{
+        text-align: center;
+    }
+
+    header .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    header .banner h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Banner */
+.banner {
+    height: 80vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000bb, #000000bb), url("../img/bg-01.PNG") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    letter-spacing: 0.3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
