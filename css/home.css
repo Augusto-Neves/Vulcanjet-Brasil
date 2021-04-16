@@ -57,17 +57,7 @@
     .card-1, .card-2 {
         width: 85vw !important;
         height: 80vw;
-    }
-    .footer-copyright {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-    }
-    .footer-copyright span>a {
-        margin-top: 5px;
-    }
+    }    
 }
 
 /* min-width: 600px */

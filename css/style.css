@@ -21,11 +21,25 @@ html, body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   margin: auto 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background-gray);
+}
+
+@media screen and (max-width: 600px) {
+  
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .footer-copyright span>a {
+    margin-top: 5px;
+  }
 }
 
 .icon-block {
@@ -115,7 +129,7 @@ footer.page-footer {
   width: 100vw;
   margin-top: 0;
   padding: 0;
-  background-color: var(--ligth-green);  
+  background-color: var(--ligth-green);
 }
 
 .page-footer h4, h5, p, a {
@@ -125,7 +139,8 @@ footer.page-footer {
 .social {
   margin-top: 2rem;
 }
-.social a img{
+
+.social a img {
   margin-right: 1.2rem;
   transition: 0.2s;
 }
@@ -148,6 +163,6 @@ footer.page-footer {
   color: var(--white);
 }
 
-.footer-copyright span > a{
+.footer-copyright span>a {
   color: var(--white)
 }
