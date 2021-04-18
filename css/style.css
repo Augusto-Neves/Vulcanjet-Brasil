@@ -21,11 +21,25 @@ html, body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   margin: auto 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background-gray);
+}
+
+@media screen and (max-width: 600px) {
+  
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .footer-copyright span>a {
+    margin-top: 5px;
+  }
 }
 
 .icon-block {
@@ -34,26 +48,6 @@ body {
 
 .icon-block .material-icons {
   font-size: inherit;
-}
-
-/* Openning Iformations */
-
-.openning-hour {
-  height: 5rem;
-  background-color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.openning-hour span {
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: var(--dark-green);
-}
-
-.openning-hour>span {
-  margin: auto 2.5rem;
 }
 
 /* Nav Bar */
@@ -82,35 +76,6 @@ body {
 
 #nav-mobile {
   background-color: var(--ligth-green);
-}
-
-/* Banner */
-
-.banner {
-  height: 80vh;
-  overflow: hidden;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #000000bb, #000000bb), url("../img/bg-01.PNG") no-repeat top center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.banner h1 {
-  letter-spacing: 0.3rem;
-  line-height: 4rem;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 700;
-}
-
-.banner h2 {
-  font-size: 1.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 /* Button */
@@ -158,92 +123,13 @@ body {
   color: var(--dark-green)
 }
 
-.parallax-container {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-}
-
-.parallax-container .parallax {
-  overflow: hidden;
-  background: linear-gradient(to right, #000000bb, #000000bb), url("../img/IMG_0022.JPG"), no-repeat top center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.container>h2 {
-  font-size: 1.7rem;
-  font-weight: 500;
-  letter-spacing: 0.3rem;
-  color: var(--white);
-}
-
-/* Cards */
-
-.card {
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--ligth-gray);
-  border: none;
-}
-
-.card-1, .card-2 {
-  background-color: var(--ligth-green);
-  justify-content: space-around;
-  flex-direction: row;
-  border-radius: 56px;
-  height: 38.25rem;
-  width: 34.06rem;
-  margin: 5rem auto;
-  box-shadow: 1rem 1rem 1.25rem var(--dark-gray);
-  transition: 0.5S;
-}
-
-.card-1 h4, .card-2 h4 {
-  padding: 2rem;
-  margin: 0;
-  color: var(--dark-green);
-  font-weight: 500;
-}
-
-.card-1 p, .card-2 p {
-  padding: 3rem;
-}
-
-.card-1:hover, .card-2:hover {
-  transform: scale(1.1);
-}
-
-/* Services */
-
-.services{
-  height: 50vh;
-  background-color: var(--ligth-gray);
-  margin-top: 5rem;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-}
-.services .container .button{
-  margin-top: 0;  
-}
-
-.services .container > .center {
-  color: var(--dark-green);
-  font-size: 1.7rem;
-  font-weight: 500;  
-}
-
 /* Footer */
 
 footer.page-footer {
   width: 100vw;
   margin-top: 0;
-  /* padding: 0; */
-  background-color: var(--ligth-green);  
+  padding: 0;
+  background-color: var(--ligth-green);
 }
 
 .page-footer h4, h5, p, a {
@@ -253,7 +139,8 @@ footer.page-footer {
 .social {
   margin-top: 2rem;
 }
-.social a img{
+
+.social a img {
   margin-right: 1.2rem;
   transition: 0.2s;
 }
@@ -276,6 +163,6 @@ footer.page-footer {
   color: var(--white);
 }
 
-.footer-copyright span > a{
+.footer-copyright span>a {
   color: var(--white)
 }
