@@ -1,21 +1,28 @@
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
-    /* Carousel */   
-
+    /* Carousel */
     header .container>h1 {
         margin-top: 0;
-        font-size: 2.5rem;        
+        font-size: 2.5rem;
     }
-    
     header .container>h2 {
-        font-size: 1.25rem;       
+        font-size: 1.25rem;
+    }
+    .section .title {
+        margin-top: 0;
+        font-size: 2.5rem;
+    }
+
+    .services-card > .services-text {
+        padding-left: 0;
     }
 }
 
 /* Header */
 
 .button {
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -26,7 +33,7 @@
     color: var(--white);
 }
 
-.container>h1 {   
+.container>h1 {
     font-size: 4rem;
     color: var(--white);
     letter-spacing: 0.3rem;
@@ -36,15 +43,16 @@
 }
 
 /* Carousel Itens */
-.carousel.carousel-slider {
+
+.carousel-fixed-item>.container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-
 .carousel .carousel-item.one {
-    height: 80vh !important; 
+    height: 80vh !important;
     background: linear-gradient(to right, #000000bb, #000000bb), url("../img/serv/IMG_01.jpg") no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
@@ -71,3 +79,79 @@
     background-attachment: fixed;
 }
 
+/* Services */
+
+.services-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    flex-wrap: wrap;
+}
+
+.services-img {
+    flex: 1 1 320px;
+}
+
+.services-img>img {
+    width: 100%;
+    border-radius: 5%;
+    /* margin: 20px; */
+}
+
+.services-text {
+    flex: 2 1 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.services-text ul li {
+    list-style: inside;
+}
+
+.partners {
+    background-color: var(--ligth-gray) ;
+}
+
+/* Differentials */
+
+.differentials {
+    /* margin-top: 3.75rem; */
+    margin-bottom: 3.75rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap;
+    
+}
+
+.differentials ul li{ 
+    margin-top: 5px;   
+    padding: 20px;
+    list-style: inside;
+}
+
+.differentials-card-1, .differentials-card-2 {    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 56px;
+    height: 38.25rem;
+    width: 34.06rem;
+    margin: 5rem auto;
+    box-shadow: 1rem 1rem 1.25rem var(--dark-gray);
+    transition: 0.5S;
+    border: 3px solid var(--dark-green);    
+}
+
+.differentials-card-1:hover, .differentials-card-2:hover{
+    transform: scale(1.1);
+}

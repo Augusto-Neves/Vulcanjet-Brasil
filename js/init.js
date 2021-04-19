@@ -19,11 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Carousel Init
 
-$('.carousel').carousel({
-  duration: 300,
-  padding: 0,  
-});
-
 $('.carousel.carousel-slider').carousel({
   duration: 300,
   padding: 0,
@@ -31,8 +26,31 @@ $('.carousel.carousel-slider').carousel({
   fullWidth: true,
 });
 
+$('.carousel.partner').carousel({
+  duration: 300,
+  padding: 200,
+  center: 1, 
+  fullWidth: false, 
+});
+
+$('.carousel.two').carousel({
+  duration: 300,
+  padding: 200,
+  padding: 0,
+  center: 1,
+  fullWidth: false,
+})
+
 // Carousel Loop
 
 setInterval(function () {
   $('.carousel.carousel-slider').carousel('next');
 }, 10000);
+
+setInterval(function () {
+  $('.carousel.partner').carousel('next');
+},3000);
+
+setInterval(function () {
+  $('.carousel.two').carousel('next');
+},3000);
