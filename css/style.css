@@ -132,7 +132,7 @@ footer.page-footer {
   background-color: var(--ligth-green);
 }
 
-.page-footer h4, h5, p, a {
+.page-footer > *, a {
   color: var(--dark-green);
 }
 
