@@ -1,0 +1,112 @@
+/* Media Queries */
+
+@media only screen and (max-width: 37.5rem) {
+    header .banner>h1 {        
+        font-size: 2.5rem;
+    }
+    
+    header .banner>h2 {        
+        font-size: 1.25rem;
+    }
+
+    .container>#ourHistory h4 {
+        font-size: 1.5625rem
+    }
+    .title {
+        font-size: 2.5rem
+    }
+
+    .parallax-container.container > h2.center {
+        font-size: 1.25rem;
+    } 
+}
+
+@media only screen and (min-width: 35.5rem) {
+    section.contact {
+        height: 20rem;
+    }
+}
+
+/* Banner */
+
+.banner {
+    height: 80vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000bb, #000000bb), url("../img/equipe-vulcanjet.jpeg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    letter-spacing: 0.3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ul.text>li {
+    list-style: inside;
+}
+
+#ourHistory h4 {
+    color: var(--dark-green);
+    font-size: 1.875rem;
+}
+
+/* Parallax Highlight*/
+
+.parallax-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.parallax-container .container>h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    color: var(--white);
+}
+
+.parallax-container .parallax {
+    overflow: hidden;
+    background: linear-gradient(to right, #000000bb, #000000bb), url("../img/fachada-vulcanjet.jpeg"), no-repeat top center;
+    background-size: cover;
+    background-position: top;   
+    background-attachment: fixed;
+}
+
+/* Contact Section */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50vh;
+    width: 100vw;
+    background-color: var(--ligth-gray);
+}
+
+.contact>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact>.container h2 {
+    color: var(--dark-green);
+    font-size: 1.7rem;
+}

@@ -9,8 +9,7 @@
     header .container>h2 {
         font-size: 1.25rem;
     }
-    .section .title {
-        margin-top: 0;
+    .section .title {       
         font-size: 2.5rem;
     }
 
@@ -42,7 +41,7 @@
     }
 
     div.contact{
-        height: 21.875rem;
+        height: 21.875rem !important;
     }
     
 }
@@ -194,7 +193,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60vh;
+    min-height: 50vh;
     background-color: var(--ligth-gray);       
 }
 
