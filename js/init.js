@@ -54,3 +54,4 @@ setInterval(function () {
 setInterval(function () {
   $('.carousel.two').carousel('next');
 },3000);
+

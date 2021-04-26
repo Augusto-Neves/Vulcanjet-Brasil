@@ -1,0 +1,88 @@
+@media only screen and (max-width: 37.5rem) {
+    div.openning-hour span {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    header .banner>h1 {        
+        font-size: 2.5rem;
+    }
+    
+    header .banner>h2 {        
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2.5rem
+    }    
+}
+
+@media only screen and (min-width: 37.5rem) {    
+    
+}
+
+/* Openning Iformations */
+
+.openning-hour {
+    height: 5rem;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.openning-hour span {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--dark-green);
+}
+
+.openning-hour>span {
+    margin: auto 2.5rem;
+}
+
+/* Banner */
+.banner {
+    min-height: 80vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #000000bb, #000000bb), url("../img/fachada-vulcanjet-03.jpg") no-repeat top center;
+    background-size: cover;
+    background-position:bottom;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    letter-spacing: 0.3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Map */
+.mapa-sede > iframe {    
+    width: 100Vw;
+    height: 50vh;   
+}
+
+.mapa-filial > iframe {
+    width: 100Vw;
+    height: 50vh; 
+      
+}
+
+/* Contact */
+.contact {
+    background-color: var(--ligth-gray);
+}
