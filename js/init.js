@@ -55,3 +55,7 @@ setInterval(function () {
   $('.carousel.two').carousel('next');
 },3000);
 
+//Character Counter Form
+$(document).ready(function() {
+  $('textarea#textarea1').characterCounter();
+});

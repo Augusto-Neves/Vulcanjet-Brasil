@@ -25,9 +25,9 @@
     section.contact {
         height: 20rem;
     }
-
-    header .banner .button {        
-        margin-bottom: 1.5rem;
+    
+    .button{
+        margin-bottom: 1rem;
     }
 }
 

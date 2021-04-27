@@ -20,6 +20,8 @@
 @media only screen and (min-width: 37.5rem) {    
     
 }
+/* Navbar active */
+
 
 /* Openning Iformations */
 
@@ -33,7 +35,7 @@
 
 .openning-hour span {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--dark-green);
 }
 
@@ -71,6 +73,10 @@
 }
 
 /* Map */
+
+.container > h3{
+    color: var(--dark-green);
+}
 .mapa-sede > iframe {    
     width: 100Vw;
     height: 50vh;   
@@ -83,6 +89,51 @@
 }
 
 /* Contact */
+
 .contact {
     background-color: var(--ligth-gray);
 }
+
+.informations {    
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;   
+    flex-wrap: wrap;
+    color: var(--dark-green);
+}
+
+.informations > h4{
+    font-size: 2.28rem;
+}
+
+.address, .contact-form {  
+    min-height: 50vh;
+    width: 34.06rem;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.address > div, .contact-form  {
+    padding: 0.8rem;
+}
+
+/* Inputs*/
+.input-field label {
+    color: var(--dark-green);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;   
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+ 
+  .input-field .material-icons {
+    color: var(--dark-green);
+  }
+
+  .input-field .prefix.active {
+    color: var(--dark-green);
+  } 
+
+  .button {
+     margin: 1rem auto;
+  }
