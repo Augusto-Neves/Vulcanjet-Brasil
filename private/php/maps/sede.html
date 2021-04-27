@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Sede</title>
+    <!-- Leaflet css style and JS scripts-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body{
+            height: 100%;
+        }
+        
+        #mapid {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapid"></div>
+
+
+
+    <script>
+        // Leaflet Map
+        var mymap = L.map('mapid').setView([-23.403181640656893, -46.34561720466116], 16);
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
+
+        var marker = L.marker([-23.403181640656893, -46.34561720466116]).addTo(mymap);
+        marker.bindPopup("<b>Vulcanjet Brasil Sede</b><br>Rua Nossa Senhora da Pompéia,<br> 664 A, Nova Arujá - Arujá-SP").openPopup();
+    </script>
+</body>
+
+</html>

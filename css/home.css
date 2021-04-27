@@ -55,8 +55,8 @@
         padding: 1.25rem !important;
     }
     .card-1, .card-2 {
-        width: 85vw !important;
-        height: 80vw;
+        width: 90vw !important;
+        height: 80vh;
     }    
 }
 
@@ -71,7 +71,7 @@
     }
     .parallax-container {
         height: 85vh !important;
-    }
+    }   
 }
 
 /* Openning Iformations */
@@ -161,8 +161,8 @@
     background-color: var(--ligth-green);
     justify-content: space-around;
     flex-direction: row;
-    border-radius: 56px;
-    height: 38.25rem;
+    border-radius: 5rem;
+    min-height: 45rem;
     width: 34.06rem;
     margin: 5rem auto;
     box-shadow: 1rem 1rem 1.25rem var(--dark-gray);

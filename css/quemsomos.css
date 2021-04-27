@@ -21,16 +21,20 @@
     } 
 }
 
-@media only screen and (min-width: 35.5rem) {
+@media only screen and (min-width: 37.5rem) {
     section.contact {
         height: 20rem;
+    }
+    
+    .button{
+        margin-bottom: 1rem;
     }
 }
 
 /* Banner */
 
 .banner {
-    height: 80vh;
+    min-height: 80vh;
     overflow: hidden;
     color: white;
     display: flex;
@@ -55,8 +59,8 @@
     font-weight: 500;
     text-transform: uppercase;
 }
-
-ul.text>li {
+/* Our history */
+.text ul >li {
     list-style: inside;
 }
 
@@ -86,6 +90,11 @@ ul.text>li {
     background-size: cover;
     background-position: top;   
     background-attachment: fixed;
+}
+
+/* Differentials Section */
+.differentials  ul >li {
+    line-height: 2.5rem;
 }
 
 /* Contact Section */

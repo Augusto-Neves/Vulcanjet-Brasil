@@ -71,7 +71,7 @@ strong{
   color: var(--white);
 }
 
-.active {
+.active-link {
   color: var(--white) !important;
 }
 
@@ -123,7 +123,8 @@ strong{
 }
 
 .text {
-  color: var(--dark-green)
+  color: var(--dark-green);
+  font-size: 1.2rem;
 }
 
 /* Footer */

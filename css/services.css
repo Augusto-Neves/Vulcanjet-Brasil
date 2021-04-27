@@ -181,7 +181,7 @@
     width: 34.06rem;
     margin: 5rem auto;
     box-shadow: 1rem 1rem 1.25rem var(--dark-gray);
-    transition: 0.5S;
+    transition: .5S;
     border: 3px solid var(--dark-green);    
 }
 
