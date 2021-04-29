@@ -30,7 +30,7 @@
     background-color: var(--white);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .openning-hour span {
@@ -41,6 +41,10 @@
 
 .openning-hour>span {
     margin: auto 2.5rem;
+}
+
+span.closed {
+    color: var(--dark-gray);
 }
 
 /* Banner */
