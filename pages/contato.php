@@ -61,23 +61,23 @@
         <nav class="navbar" role="navigation">
             <div class="nav-wrapper">
                 <a id="logo-container" href="../index.html" class="brand-logo">
-                    <img src="../img/vulcanjet-logo-1.png" alt="Vulcanjet Brasil Logo" width="88" height="auto">
+                    <img title="Vulcanjet Brasil" src="../img/vulcanjet-logo-1.png" alt="Vulcanjet Brasil Logo" width="88" height="auto">
                 </a>
 
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./quemsomos.html">Quem Somos</a></li>
-                    <li><a href="./servicos.html">Serviços</a></li>
-                    <li><a href="./contato.php" class="active-link">Contato</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a title="Início" href="../index.html">Início</a></li>
+                    <li><a title="Quem Somos" href="./quemsomos.html">Quem Somos</a></li>
+                    <li><a title="Serviços" href="./servicos.html">Serviços</a></li>
+                    <li><a title="Contato" href="./contato.php" class="active-link">Contato</a></li>
+                    <li><a title="Blog" href="#">Blog</a></li>
                 </ul>
 
                 <ul id="nav-mobile" class="sidenav">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./quemsomos.html">Quem Somos</a></li>
-                    <li><a href="./servicos.html">Serviços</a></li>
-                    <li><a href="./contato.php" class="active-link">Contato</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a title="Início" href="../index.html">Início</a></li>
+                    <li><a title="Quem Somos" href="./quemsomos.html">Quem Somos</a></li>
+                    <li><a title="Serviços" href="./servicos.html">Serviços</a></li>
+                    <li><a title="Contato" href="./contato.php" class="active-link">Contato</a></li>
+                    <li><a title="Blog" href="#">Blog</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i>
                 </a>
