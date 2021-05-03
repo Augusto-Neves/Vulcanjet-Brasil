@@ -1,3 +1,32 @@
+<?php 
+    if (isset($_POST['email']) && !empty($_POST['email'])) {
+    
+        $nome = addslashes($_POST['nome']);        
+        $assunto = addslashes($_POST['assunto']);
+        $email = addslashes($_POST['email']);
+        $mensagem = addslashes($_POST['mensagem']);
+
+        // Corpo do Email
+        $to = "contato@vulcanjetbrasil.com.br";
+        $email_subject = "Contato - Vulcanjet Brasil";
+        $body = "Nome: ".$nome."\r\n".
+                "Assunto: ".$assunto."\r\n".
+                "Email: ".$email."\r\n".                
+                "Mensagem: ".$mensagem."\r\n";             
+        $header = "From: site@vulcanjetbrasil.com.br"."\r\n".
+                "Reply-To: ".$email."\r\n".
+                "X=mailer:PHP/".phpversion();
+        
+        $status = mail($to, $assunto, $body, $header);  
+
+        if ($status) {           
+            echo "<p class='text center'>Email enviado com sucesso!</p>";                                  
+                            
+        }else {                       
+            echo "<p class='text center'>Erro ao enviar o email. Tente novamente!</p>";                            
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -39,7 +68,7 @@
                     <li><a href="../index.html">Início</a></li>
                     <li><a href="./quemsomos.html">Quem Somos</a></li>
                     <li><a href="./servicos.html">Serviços</a></li>
-                    <li><a href="./contato.html" class="active-link">Contato</a></li>
+                    <li><a href="./contato.php" class="active-link">Contato</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
 
@@ -47,7 +76,7 @@
                     <li><a href="../index.html">Início</a></li>
                     <li><a href="./quemsomos.html">Quem Somos</a></li>
                     <li><a href="./servicos.html">Serviços</a></li>
-                    <li><a href="./contato.html" class="active-link">Contato</a></li>
+                    <li><a href="./contato.php" class="active-link">Contato</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i>
@@ -75,14 +104,14 @@
         <!-- Mapas Sede e Filial-->
         <div class="maps">
             <div class="mapa-sede">
-                <iframe src="../private/php/maps/sede.html" frameborder="0" allowfullscreen></iframe>
+                <iframe src="../private/maps/sede.html" frameborder="0" allowfullscreen></iframe>
             </div><br>
 
             <div class="container">
                 <h3 class="center">FILIAL NORDESTE</h3>
             </div><br><br>
             <div class="mapa-filial">
-                <iframe src="../private/php/maps/filial.html" frameborder="0" allowfullscreen></iframe>
+                <iframe src="../private/maps/filial.html" frameborder="0" allowfullscreen></iframe>
             </div>
         </div><br><br>
 
@@ -115,11 +144,16 @@
 
                 <div class="contact-form">
                     <h4 class="center">Formulário de Contato</h4><br>
-                    <form action="">
+                    <form action="contato.php" method="POST">
                         <div class="input-field">
                             <i class="material-icons prefix">account_circle</i>
                             <label for="nome">Nome:</label>
                             <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">forum</i>
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" name="assunto" id="assunto">
                         </div>
                         <div class="input-field">
                             <i class="material-icons prefix">mail</i>
@@ -129,7 +163,8 @@
                         <div class="input-field">
                             <i class="material-icons prefix">message</i>
                             <label for="textarea1">Mensagem:</label>
-                            <textarea id="textarea1" data-length="500" class="materialize-textarea" required></textarea>
+                            <textarea id="textarea1" data-length="500" class="materialize-textarea" name="mensagem"
+                                required></textarea>
                         </div>
 
                         <button class="button" type="submit" name="action">Enviar
