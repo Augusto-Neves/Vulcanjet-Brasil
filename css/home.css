@@ -52,6 +52,7 @@
         font-size: 2.5rem !important;
     }
     .text {
+        font-size: 1.1rem;
         padding: 1.25rem !important;
     }
     .card-1, .card-2 {
@@ -101,7 +102,7 @@ span.closed {
 /* Banner */
 
 .banner {
-    height: 80vh;
+    min-height: 80vh;
     overflow: hidden;
     color: white;
     display: flex;
@@ -130,7 +131,7 @@ span.closed {
 /* Parallax */
 
 .parallax-container {
-    height: 60vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
 }
