@@ -16,7 +16,7 @@
         $header = "From: site@vulcanjetbrasil.com.br"."\r\n".
                 "Reply-To: ".$email."\r\n".
                 "X=mailer:PHP/".phpversion();
-        
+
         $status = mail($to, $assunto, $body, $header);  
 
         if ($status) {           
@@ -34,7 +34,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato | Vulcanjet Brasil</title>
+    <title>Vulcanjet Brasil - Contato</title>
 
     <link rel="shortcut icon" href="../img/fav-icon.png" type="image/x-icon">
     <!-- CSS  -->
@@ -43,6 +43,23 @@
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="../css/contato.css">
 
+    <!-- Meta Tags para Seo -->
+    <meta name="title" content="Vulcanjet Brasil - Contato">
+    <meta name="description" content="Entre em contato e conheça nossos serviços de Desinfecção e Higienização de Ambientes. Solicite um orçamento ou demonstração grátis.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="http://vulcanjetbrasil.com.br/"> -->
+    <meta property="og:title" content="Vulcanjet Brasil - Contato">
+    <meta property="og:description" content="Entre em contato e conheça nossos serviços de Desinfecção e Higienização de Ambientes. Solicite um orçamento ou demonstração grátis.">
+    <!-- <meta property="og:image" content=""> -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <!-- <meta property="twitter:url" content="http://vulcanjetbrasil.com.br/"> -->
+    <meta property="twitter:title" content="Vulcanjet Brasil - Contato">
+    <meta property="twitter:description" content="Entre em contato e conheça nossos serviços de Desinfecção e Higienização de Ambientes. Solicite um orçamento ou demonstração grátis.">
+    <!-- <meta property="twitter:image" content=""> -->
 </head>
 
 <body>

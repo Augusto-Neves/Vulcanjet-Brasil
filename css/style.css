@@ -91,6 +91,7 @@ strong{
   height: 4rem;
   width: 12rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   border: none;
   background-color: var(--ligth-green);
   color: var(--dark-green);
