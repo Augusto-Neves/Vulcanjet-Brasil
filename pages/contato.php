@@ -49,17 +49,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <!-- <meta property="og:url" content="http://vulcanjetbrasil.com.br/"> -->
+    <meta property="og:url" content="http://vulcanjetbrasil.com.br/pages/contato.php">
     <meta property="og:title" content="Vulcanjet Brasil - Contato">
     <meta property="og:description" content="Entre em contato e conheça nossos serviços de Desinfecção e Higienização de Ambientes. Solicite um orçamento ou demonstração grátis.">
-    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:image" content="http://vulcanjetbrasil.com.br/img/og-image.jpeg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <!-- <meta property="twitter:url" content="http://vulcanjetbrasil.com.br/"> -->
+    <meta property="twitter:url" content="http://vulcanjetbrasil.com.br/pages/contato.php">
     <meta property="twitter:title" content="Vulcanjet Brasil - Contato">
     <meta property="twitter:description" content="Entre em contato e conheça nossos serviços de Desinfecção e Higienização de Ambientes. Solicite um orçamento ou demonstração grátis.">
-    <!-- <meta property="twitter:image" content=""> -->
+    <meta property="twitter:image" content="http://vulcanjetbrasil.com.br/img/og-image.jpeg">
 </head>
 
 <body>
