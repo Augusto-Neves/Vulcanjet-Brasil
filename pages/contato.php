@@ -88,7 +88,7 @@
                     <li><a title="Quem Somos" href="./quemsomos.html">Quem Somos</a></li>
                     <li><a title="Serviços" href="./servicos.html">Serviços</a></li>
                     <li><a title="Contato" href="./contato.php" class="active-link">Contato</a></li>
-                    <li><a title="Blog" href="#">Blog</a></li>
+                    <li><a title="Blog" href="http://vulcanjetbrasil.com.br/blog/">Blog</a></li>
                 </ul>
 
                 <ul id="nav-mobile" class="sidenav">
@@ -96,7 +96,7 @@
                     <li><a title="Quem Somos" href="./quemsomos.html">Quem Somos</a></li>
                     <li><a title="Serviços" href="./servicos.html">Serviços</a></li>
                     <li><a title="Contato" href="./contato.php" class="active-link">Contato</a></li>
-                    <li><a title="Blog" href="#">Blog</a></li>
+                    <li><a title="Blog" href="http://vulcanjetbrasil.com.br/blog/">Blog</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i>
                 </a>
